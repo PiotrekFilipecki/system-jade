@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1 Nagraj
+  p Nagraj i edytuj wideo
+  video#gum(autoplay='', muted='')
+  video#recorded(autoplay='', controls='')
+  div.interface
+   button#record Start Recording
+   label(for='record')
+   br
+   br
+   span Seconds of recorded video to play (min 1):
+   input(min='1', type='number', disabled='')
+   button#play(disabled='') Play
+   br
+   br
+   span.record-download Seconds of recorded video to download (min 1):
+   input.record-download(min='1', type='number', disabled='')
+   button#download.record-download(disabled='') Download
