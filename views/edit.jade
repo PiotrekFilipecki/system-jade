@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1 Edytuj
+  form
+  | od:
+  br
+  |   
+  input#numberFrom(type="text", name="number")
+  |   
+  button#set(type="button") Set
+  |   
+  br
+  |   do:
+  br
+  |   
+  input#numberTo(type="text", name="number")
+  |   
+  button#set2(type="button") Set2
+  video#video(preload="auto", style=" display: block; margin:0 auto;", width="500", src="http://firmseeksite3.ftp.firmseek.net/media_files/video/wysiwyg.mp4#t=", controls="")

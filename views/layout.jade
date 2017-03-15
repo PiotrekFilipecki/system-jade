@@ -23,6 +23,10 @@ html(lang='en')
                a(href='capture') Nagraj
              li(class=(title == 'UploadVideo' ? 'active' : ''))
                a(href='uploadvideo') Wgraj
+             li(class=(title == 'Edit' ? 'active' : ''))
+               a(href='edit') Edytuj
+             li(class=(title == 'Gallery' ? 'active' : ''))
+               a(href='gallery') Galeria
             if !user
              li(class=(title == 'Register' ? 'active' : ''))
               a(href='/users/register') Register
@@ -36,6 +40,8 @@ html(lang='en')
      != messages()
      block content
      
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    //script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='https://code.jquery.com/jquery-2.2.4.min.js')
     script(src='javascripts/bootstrap.js')
     script(src='javascripts/mediaRecord.js')
+    script(src='javascripts/editVideo.js')  

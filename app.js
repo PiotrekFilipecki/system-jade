@@ -22,6 +22,8 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var capture = require('./routes/capture');
 var uploadvideo = require('./routes/uploadvideo');
+var edit = require('./routes/edit');
+var gallery = require('./routes/gallery');
 
 
 
@@ -90,6 +92,8 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/capture', capture);
 app.use('/uploadvideo', uploadvideo);
+app.use('/edit', edit);
+app.use('/gallery', gallery);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -12,6 +12,10 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
+router.get('/', function(req, res, next) {
+  res.send('respond with a resource');
+});
+
 router.get('/register', function(req, res, next) {
   res.render('register',{title:'Register'});
 });
@@ -26,6 +30,14 @@ router.get('/capture', function(req, res, next) {
 
 router.get('/uploadvideo', function(req, res, next) {
   res.render('uploadvideo', {title:'UploadVideo'});
+});
+
+router.get('/edit', function(req, res, next) {
+  res.render('edit', {title:'Edit'});
+});
+
+router.get('/gallery', function(req, res, next) {
+  res.render('gallery', {title:'Gallery'});
 });
 
 router.post('/login',
